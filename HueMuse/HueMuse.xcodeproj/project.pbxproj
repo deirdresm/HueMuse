@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38E4D43E25E0785400221B72 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4D43D25E0785400221B72 /* Tests_iOS.swift */; };
+		38E4D44925E0785400221B72 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4D44825E0785400221B72 /* Tests_macOS.swift */; };
+		38E4D44B25E0785400221B72 /* HueMuseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4D42225E0785000221B72 /* HueMuseApp.swift */; };
+		38E4D44C25E0785400221B72 /* HueMuseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4D42225E0785000221B72 /* HueMuseApp.swift */; };
+		38E4D44D25E0785400221B72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4D42325E0785000221B72 /* ContentView.swift */; };
+		38E4D44E25E0785400221B72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4D42325E0785000221B72 /* ContentView.swift */; };
+		38E4D44F25E0785400221B72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E4D42425E0785400221B72 /* Assets.xcassets */; };
+		38E4D45025E0785400221B72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E4D42425E0785400221B72 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38E4D43A25E0785400221B72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38E4D41D25E0784F00221B72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38E4D42825E0785400221B72;
+			remoteInfo = "HueMuse (iOS)";
+		};
+		38E4D44525E0785400221B72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38E4D41D25E0784F00221B72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38E4D43025E0785400221B72;
+			remoteInfo = "HueMuse (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38E4D42225E0785000221B72 /* HueMuseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueMuseApp.swift; sourceTree = "<group>"; };
+		38E4D42325E0785000221B72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		38E4D42425E0785400221B72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38E4D42925E0785400221B72 /* HueMuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HueMuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38E4D42C25E0785400221B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38E4D43125E0785400221B72 /* HueMuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HueMuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38E4D43325E0785400221B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38E4D43425E0785400221B72 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		38E4D43925E0785400221B72 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38E4D43D25E0785400221B72 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		38E4D43F25E0785400221B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38E4D44425E0785400221B72 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38E4D44825E0785400221B72 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		38E4D44A25E0785400221B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38E4D42625E0785400221B72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38E4D42E25E0785400221B72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38E4D43625E0785400221B72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38E4D44125E0785400221B72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38E4D41C25E0784F00221B72 = {
+			isa = PBXGroup;
+			children = (
+				38E4D42125E0785000221B72 /* Shared */,
+				38E4D42B25E0785400221B72 /* iOS */,
+				38E4D43225E0785400221B72 /* macOS */,
+				38E4D43C25E0785400221B72 /* Tests iOS */,
+				38E4D44725E0785400221B72 /* Tests macOS */,
+				38E4D42A25E0785400221B72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38E4D42125E0785000221B72 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				38E4D42225E0785000221B72 /* HueMuseApp.swift */,
+				38E4D42325E0785000221B72 /* ContentView.swift */,
+				38E4D42425E0785400221B72 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		38E4D42A25E0785400221B72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38E4D42925E0785400221B72 /* HueMuse.app */,
+				38E4D43125E0785400221B72 /* HueMuse.app */,
+				38E4D43925E0785400221B72 /* Tests iOS.xctest */,
+				38E4D44425E0785400221B72 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38E4D42B25E0785400221B72 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				38E4D42C25E0785400221B72 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		38E4D43225E0785400221B72 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				38E4D43325E0785400221B72 /* Info.plist */,
+				38E4D43425E0785400221B72 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		38E4D43C25E0785400221B72 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				38E4D43D25E0785400221B72 /* Tests_iOS.swift */,
+				38E4D43F25E0785400221B72 /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		38E4D44725E0785400221B72 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				38E4D44825E0785400221B72 /* Tests_macOS.swift */,
+				38E4D44A25E0785400221B72 /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38E4D42825E0785400221B72 /* HueMuse (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38E4D45325E0785400221B72 /* Build configuration list for PBXNativeTarget "HueMuse (iOS)" */;
+			buildPhases = (
+				38E4D42525E0785400221B72 /* Sources */,
+				38E4D42625E0785400221B72 /* Frameworks */,
+				38E4D42725E0785400221B72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HueMuse (iOS)";
+			productName = "HueMuse (iOS)";
+			productReference = 38E4D42925E0785400221B72 /* HueMuse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		38E4D43025E0785400221B72 /* HueMuse (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38E4D45625E0785400221B72 /* Build configuration list for PBXNativeTarget "HueMuse (macOS)" */;
+			buildPhases = (
+				38E4D42D25E0785400221B72 /* Sources */,
+				38E4D42E25E0785400221B72 /* Frameworks */,
+				38E4D42F25E0785400221B72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HueMuse (macOS)";
+			productName = "HueMuse (macOS)";
+			productReference = 38E4D43125E0785400221B72 /* HueMuse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		38E4D43825E0785400221B72 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38E4D45925E0785400221B72 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				38E4D43525E0785400221B72 /* Sources */,
+				38E4D43625E0785400221B72 /* Frameworks */,
+				38E4D43725E0785400221B72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38E4D43B25E0785400221B72 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 38E4D43925E0785400221B72 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		38E4D44325E0785400221B72 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38E4D45C25E0785400221B72 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				38E4D44025E0785400221B72 /* Sources */,
+				38E4D44125E0785400221B72 /* Frameworks */,
+				38E4D44225E0785400221B72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38E4D44625E0785400221B72 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 38E4D44425E0785400221B72 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38E4D41D25E0784F00221B72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					38E4D42825E0785400221B72 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					38E4D43025E0785400221B72 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					38E4D43825E0785400221B72 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 38E4D42825E0785400221B72;
+					};
+					38E4D44325E0785400221B72 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 38E4D43025E0785400221B72;
+					};
+				};
+			};
+			buildConfigurationList = 38E4D42025E0784F00221B72 /* Build configuration list for PBXProject "HueMuse" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38E4D41C25E0784F00221B72;
+			productRefGroup = 38E4D42A25E0785400221B72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38E4D42825E0785400221B72 /* HueMuse (iOS) */,
+				38E4D43025E0785400221B72 /* HueMuse (macOS) */,
+				38E4D43825E0785400221B72 /* Tests iOS */,
+				38E4D44325E0785400221B72 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38E4D42725E0785400221B72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38E4D44F25E0785400221B72 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38E4D42F25E0785400221B72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38E4D45025E0785400221B72 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38E4D43725E0785400221B72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38E4D44225E0785400221B72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38E4D42525E0785400221B72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38E4D44D25E0785400221B72 /* ContentView.swift in Sources */,
+				38E4D44B25E0785400221B72 /* HueMuseApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38E4D42D25E0785400221B72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38E4D44E25E0785400221B72 /* ContentView.swift in Sources */,
+				38E4D44C25E0785400221B72 /* HueMuseApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38E4D43525E0785400221B72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38E4D43E25E0785400221B72 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38E4D44025E0785400221B72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38E4D44925E0785400221B72 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38E4D43B25E0785400221B72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38E4D42825E0785400221B72 /* HueMuse (iOS) */;
+			targetProxy = 38E4D43A25E0785400221B72 /* PBXContainerItemProxy */;
+		};
+		38E4D44625E0785400221B72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38E4D43025E0785400221B72 /* HueMuse (macOS) */;
+			targetProxy = 38E4D44525E0785400221B72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		38E4D45125E0785400221B72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		38E4D45225E0785400221B72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		38E4D45425E0785400221B72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3N8JZ2T92;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.deirdre.HueMuse;
+				PRODUCT_NAME = HueMuse;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38E4D45525E0785400221B72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3N8JZ2T92;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.deirdre.HueMuse;
+				PRODUCT_NAME = HueMuse;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38E4D45725E0785400221B72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = V3N8JZ2T92;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.deirdre.HueMuse;
+				PRODUCT_NAME = HueMuse;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		38E4D45825E0785400221B72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = V3N8JZ2T92;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.deirdre.HueMuse;
+				PRODUCT_NAME = HueMuse;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		38E4D45A25E0785400221B72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3N8JZ2T92;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.deirdre.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HueMuse (iOS)";
+			};
+			name = Debug;
+		};
+		38E4D45B25E0785400221B72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V3N8JZ2T92;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.deirdre.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HueMuse (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38E4D45D25E0785400221B72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = V3N8JZ2T92;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.deirdre.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "HueMuse (macOS)";
+			};
+			name = Debug;
+		};
+		38E4D45E25E0785400221B72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = V3N8JZ2T92;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.deirdre.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "HueMuse (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38E4D42025E0784F00221B72 /* Build configuration list for PBXProject "HueMuse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38E4D45125E0785400221B72 /* Debug */,
+				38E4D45225E0785400221B72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38E4D45325E0785400221B72 /* Build configuration list for PBXNativeTarget "HueMuse (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38E4D45425E0785400221B72 /* Debug */,
+				38E4D45525E0785400221B72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38E4D45625E0785400221B72 /* Build configuration list for PBXNativeTarget "HueMuse (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38E4D45725E0785400221B72 /* Debug */,
+				38E4D45825E0785400221B72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38E4D45925E0785400221B72 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38E4D45A25E0785400221B72 /* Debug */,
+				38E4D45B25E0785400221B72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38E4D45C25E0785400221B72 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38E4D45D25E0785400221B72 /* Debug */,
+				38E4D45E25E0785400221B72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38E4D41D25E0784F00221B72 /* Project object */;
+}
