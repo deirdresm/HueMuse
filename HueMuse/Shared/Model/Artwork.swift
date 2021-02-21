@@ -17,8 +17,14 @@ struct Artwork: Codable {
     let copyrightNotice: String?
     let color: ArtColor?
     let artistDisplay: String
+    let dateDisplay: String
     let id: Int
     let imageID, title, placeOfOrigin: String
+    var hueBucket: Int = 0
+
+    var description: String {
+        return self.artistDisplay
+    }
 
     enum CodingKeys: String, CodingKey {
         case score = "_score"
@@ -26,6 +32,7 @@ struct Artwork: Codable {
         case copyrightNotice = "copyright_notice"
         case color
         case artistDisplay = "artist_display"
+        case dateDisplay = "date_display"
         case id
         case imageID = "image_id"
         case title
@@ -57,6 +64,7 @@ extension Artwork {
         copyrightNotice: String? = nil,
         color: ArtColor? = nil,
         artistDisplay: String? = nil,
+        dateDisplay: String? = nil,
         id: Int? = nil,
         imageID: String? = nil,
         title: String? = nil,
@@ -68,6 +76,7 @@ extension Artwork {
             copyrightNotice: copyrightNotice ?? self.copyrightNotice,
             color: color ?? self.color,
             artistDisplay: artistDisplay ?? self.artistDisplay,
+            dateDisplay: dateDisplay ?? self.dateDisplay,
             id: id ?? self.id,
             imageID: imageID ?? self.imageID,
             title: title ?? self.title,

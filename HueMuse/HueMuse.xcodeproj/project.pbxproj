@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3847E44925E1D756006CA12D /* ArtworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847E44825E1D756006CA12D /* ArtworkDetailView.swift */; };
+		3847E44A25E1D756006CA12D /* ArtworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847E44825E1D756006CA12D /* ArtworkDetailView.swift */; };
+		3847E45125E1D89D006CA12D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3847E45025E1D89D006CA12D /* Preview Assets.xcassets */; };
+		3847E45225E1D89D006CA12D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3847E45025E1D89D006CA12D /* Preview Assets.xcassets */; };
+		3847E45C25E1D8F4006CA12D /* Artwork+Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847E45B25E1D8F4006CA12D /* Artwork+Previews.swift */; };
+		3847E45D25E1D8F4006CA12D /* Artwork+Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3847E45B25E1D8F4006CA12D /* Artwork+Previews.swift */; };
 		38E4D43E25E0785400221B72 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4D43D25E0785400221B72 /* Tests_iOS.swift */; };
 		38E4D44925E0785400221B72 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4D44825E0785400221B72 /* Tests_macOS.swift */; };
 		38E4D44B25E0785400221B72 /* HueMuseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4D42225E0785000221B72 /* HueMuseApp.swift */; };
@@ -43,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3847E44825E1D756006CA12D /* ArtworkDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkDetailView.swift; sourceTree = "<group>"; };
+		3847E45025E1D89D006CA12D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3847E45B25E1D8F4006CA12D /* Artwork+Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Artwork+Previews.swift"; sourceTree = "<group>"; };
 		38E4D42225E0785000221B72 /* HueMuseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueMuseApp.swift; sourceTree = "<group>"; };
 		38E4D42325E0785000221B72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		38E4D42425E0785400221B72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +104,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3847E44725E1D756006CA12D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3847E44825E1D756006CA12D /* ArtworkDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3847E44F25E1D89C006CA12D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3847E45025E1D89D006CA12D /* Preview Assets.xcassets */,
+				3847E45B25E1D8F4006CA12D /* Artwork+Previews.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		38E4D41C25E0784F00221B72 = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +139,9 @@
 				38E4D42225E0785000221B72 /* HueMuseApp.swift */,
 				38E4D42325E0785000221B72 /* ContentView.swift */,
 				38E4D42425E0785400221B72 /* Assets.xcassets */,
+				3847E44725E1D756006CA12D /* Views */,
 				38E4D47225E08D3B00221B72 /* Model */,
+				3847E44F25E1D89C006CA12D /* Preview Content */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -299,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3847E45125E1D89D006CA12D /* Preview Assets.xcassets in Resources */,
 				38E4D44F25E0785400221B72 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3847E45225E1D89D006CA12D /* Preview Assets.xcassets in Resources */,
 				38E4D45025E0785400221B72 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,7 +365,9 @@
 				38E4D48225E1A1FE00221B72 /* DataModel.swift in Sources */,
 				38E4D47B25E08E1000221B72 /* DataError.swift in Sources */,
 				38E4D47425E08D6F00221B72 /* ArtworkProvider.swift in Sources */,
+				3847E45C25E1D8F4006CA12D /* Artwork+Previews.swift in Sources */,
 				38E4D44D25E0785400221B72 /* ContentView.swift in Sources */,
+				3847E44925E1D756006CA12D /* ArtworkDetailView.swift in Sources */,
 				38E4D49125E1A78200221B72 /* Artwork.swift in Sources */,
 				38E4D44B25E0785400221B72 /* HueMuseApp.swift in Sources */,
 			);
@@ -348,7 +380,9 @@
 				38E4D48325E1A1FE00221B72 /* DataModel.swift in Sources */,
 				38E4D47C25E08E1000221B72 /* DataError.swift in Sources */,
 				38E4D47525E08D6F00221B72 /* ArtworkProvider.swift in Sources */,
+				3847E45D25E1D8F4006CA12D /* Artwork+Previews.swift in Sources */,
 				38E4D44E25E0785400221B72 /* ContentView.swift in Sources */,
+				3847E44A25E1D756006CA12D /* ArtworkDetailView.swift in Sources */,
 				38E4D49225E1A78200221B72 /* Artwork.swift in Sources */,
 				38E4D44C25E0785400221B72 /* HueMuseApp.swift in Sources */,
 			);
