@@ -10,11 +10,16 @@ import SwiftUI
 struct ContentView: View {
 
     @State private var selectedColour: Color = .red
-    private let screenWidth = UIScreen.main.bounds.size.width
 
-    private let tempData: [Artwork] = [Artwork.vanGogh, Artwork.shakyamuni, Artwork.caillebotte, Artwork.seurat, Artwork.motecuhzoma]
+    // TODO: linkage from changing the color to changing the hue bucket
+    @ObservedObject var pieces: CurrentPieces
 
-    private var twoColumnGrid = [
+    // these next three vars were private, but then it said ContentView was inaccessible after I made changes - dsm
+    let screenWidth = UIScreen.main.bounds.size.width
+
+    let tempData: [Artwork] = [Artwork.vanGogh, Artwork.shakyamuni, Artwork.caillebotte, Artwork.seurat, Artwork.motecuhzoma]
+
+    var twoColumnGrid = [
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
@@ -56,6 +61,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(pieces: CurrentPieces(pieces: [Artwork.vanGogh, Artwork.shakyamuni, Artwork.caillebotte, Artwork.seurat, Artwork.motecuhzoma], hue: 0))
     }
 }

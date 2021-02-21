@@ -107,6 +107,7 @@
 		3847E44725E1D756006CA12D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				38E4D42325E0785000221B72 /* ContentView.swift */,
 				3847E44825E1D756006CA12D /* ArtworkDetailView.swift */,
 			);
 			path = Views;
@@ -137,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				38E4D42225E0785000221B72 /* HueMuseApp.swift */,
-				38E4D42325E0785000221B72 /* ContentView.swift */,
 				38E4D42425E0785400221B72 /* Assets.xcassets */,
 				3847E44725E1D756006CA12D /* Views */,
 				38E4D47225E08D3B00221B72 /* Model */,

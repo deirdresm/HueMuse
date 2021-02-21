@@ -7,6 +7,30 @@
 
 import Foundation
 
+// TODO: change the value of pieces at the end of appending all the parsed JSON
+
+class CurrentPieces: ObservableObject {
+    @Published var pieces: [Artwork]
+    var hue: Int
+
+    init(pieces: [Artwork], hue: Int) {
+        self.pieces = pieces
+        self.hue = hue
+        hueBucket = hue // may override pieces passed in
+    }
+
+    var hueBucket: Int {
+        get {
+            return hue
+        }
+        set(newHue) {
+            hue = newHue
+
+            pieces = Artwork.pieces.filter( {$0.hueBucket == newHue})
+        }
+    }
+}
+
 // MARK: - Artwork
 struct Artwork: Codable {
 
@@ -50,6 +74,14 @@ struct Artwork: Codable {
 extension Artwork {
     init(data: Data) throws {
         self = try newJSONDecoder().decode(Artwork.self, from: data)
+
+        if self.classificationTitle == "oil on canvas" || self.classificationTitle == "painting" || self.classificationTitles.contains("oil on canvas") || self.classificationTitles.contains("painting") {
+
+            if let c = self.color {
+                self.hueBucket = (c.h ?? 0) / 16 // nearest hue bucket
+                Artwork.pieces.append(self)
+            }
+        }
     }
 
     init(_ json: String, using encoding: String.Encoding = .utf8) throws {
@@ -99,19 +131,23 @@ extension Artwork {
     func jsonString(encoding: String.Encoding = .utf8) throws -> String? {
         return String(data: try self.jsonData(), encoding: encoding)
     }
-
-    static func filter(_ listings: [Artwork]) {
-
-        // TODO: may need to filter more than this
-        for index in 0 ..< listings.count {
-            var piece = listings[index]
-
-            if let c = piece.color {
-                piece.hueBucket = (c.h ?? 0) / 16 // nearest hue bucket
-                pieces.append(piece)
-            }
-        }
-    }
+//
+//    static func filter(_ listings: [Artwork]) {
+//
+//        for index in 0 ..< listings.count {
+//            var piece = listings[index]
+//
+//            // paintings tend to be the most colorful, but more categories is also fine
+//
+//            if piece.classificationTitle == "oil on canvas" || piece.classificationTitle == "painting" || piece.classificationTitles.contains("oil on canvas") || piece.classificationTitles.contains("painting") {
+//
+//                if let c = piece.color {
+//                    piece.hueBucket = (c.h ?? 0) / 16 // nearest hue bucket
+//                    pieces.append(piece)
+//                }
+//            }
+//        }
+//    }
 }
 
 // MARK: - Color

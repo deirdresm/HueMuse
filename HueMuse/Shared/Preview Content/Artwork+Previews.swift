@@ -12,8 +12,18 @@ extension Artwork {
     public static var vanGogh: Artwork {
         let color = ArtColor(s: 84, percentage: 0.30623617995004176, h: 40, l: 33, population: 1709)
 
-        let artwork = Artwork(score: 12731.75, colorfulness: 65.636, copyrightNotice: nil, color: color, artistDisplay: "Vincent van Gogh\nDutch, 1853-1890", dateDisplay: "1889", id: 28560, imageID: "25c31d8d-21a4-9ea1-1d73-6a2eca4dda7e", title: "The Bedroom", placeOfOrigin: "Netherlands", classificationTitle: "painting", classificationTitles: [])
-
+        let artwork = Artwork(score: 12731.75,
+                          colorfulness: 65.636,
+                          copyrightNotice: nil,
+                          color: color,
+                          artistDisplay: "Vincent van Gogh\nDutch, 1853-1890",
+                          dateDisplay: "1889",
+                          id: 28560,
+                          imageID: "25c31d8d-21a4-9ea1-1d73-6a2eca4dda7e",
+                          title: "The Bedroom",
+                          placeOfOrigin: "Netherlands",
+                          classificationTitle: "painting",
+                          classificationTitles: [])
         return artwork
     }
 

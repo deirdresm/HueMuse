@@ -61,6 +61,7 @@ class ArtworkProvider {
         print("\(Date()) Start fetching data from server ...")
         task.resume()
     }
+
 }
 
 
