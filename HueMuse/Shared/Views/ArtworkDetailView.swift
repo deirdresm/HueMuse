@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ArtworkDetailView: View {
     let piece: Artwork
-    
+
+    // TODO macOS conditionals
     private let screenHeight = UIScreen.main.bounds.size.height
     private let screenWidth = UIScreen.main.bounds.size.width
 

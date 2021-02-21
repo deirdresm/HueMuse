@@ -8,7 +8,8 @@
 import Foundation
 
 class ArtworkProvider {
-    let feed = "https://api.artic.edu/api/v1/artworks/search?query[term][is_public_domain]=true&limit=100&fields=id,title,image_id,artist_display,date_display,place_of_origin,copyright_notice,colorfulness,color"
+    let feed = "https://api.artic.edu/api/v1/artworks/search?query[term][is_public_domain]=true&page="
+    let feed2 = "&limit=100&fields=id,title,image_id,artist_display,date_display,place_of_origin,copyright_notice,colorfulness,color"
 
     // to get the image itself:
 
@@ -16,9 +17,12 @@ class ArtworkProvider {
 
     // TODO: pagination!
 
+    // https://api.artic.edu/api/v1/artists?page=2&limit=10
+
     func fetchArtwork(completionHandler: @escaping (Error?) -> Void) {
         // Create a URL to load, and a URLSession to load it.
-        guard let jsonURL = URL(string: feed) else {
+        // Change the number between the two parts of feed for pagination.
+        guard let jsonURL = URL(string: "\(feed)1\(feed2)") else {
             completionHandler(DataError.urlError)
             return
         }

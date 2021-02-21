@@ -20,7 +20,7 @@ struct Artwork: Codable {
     let dateDisplay: String
     let id: Int
     let imageID, title, placeOfOrigin: String
-    var hueBucket: Int = 0
+    var hueBucket: Int = 0 // divide hue into 16 segments, this is the closest.
 
     var description: String {
         return self.artistDisplay
@@ -95,8 +95,11 @@ extension Artwork {
     static func filter(_ listings: [Artwork]) {
 
         // TODO: may need to filter more than this
-        for piece in listings {
-            if let _ = piece.color {
+        for index in 0 ..< listings.count {
+            var piece = listings[index]
+
+            if let c = piece.color {
+                piece.hueBucket = (c.h ?? 0) / 16 // nearest hue bucket
                 pieces.append(piece)
             }
         }
