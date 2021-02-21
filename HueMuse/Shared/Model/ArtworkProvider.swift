@@ -9,7 +9,7 @@ import Foundation
 
 class ArtworkProvider {
     let feed = "https://api.artic.edu/api/v1/artworks/search?query[term][is_public_domain]=true&page="
-    let feed2 = "&limit=100&fields=id,title,image_id,artist_display,date_display,place_of_origin,copyright_notice,colorfulness,color"
+    let feed2 = "&limit=100&fields=id,title,image_id,artist_display,date_display,place_of_origin,copyright_notice,colorfulness,color,classification_title,classification_titles"
 
     // to get the image itself:
 

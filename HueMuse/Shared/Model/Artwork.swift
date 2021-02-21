@@ -21,6 +21,8 @@ struct Artwork: Codable {
     let id: Int
     let imageID, title, placeOfOrigin: String
     var hueBucket: Int = 0 // divide hue into 16 segments, this is the closest.
+    let classificationTitle: String
+    var classificationTitles: [String]  // always present in data I've seen
 
     var description: String {
         return self.artistDisplay
@@ -37,7 +39,10 @@ struct Artwork: Codable {
         case imageID = "image_id"
         case title
         case placeOfOrigin = "place_of_origin"
-    }
+
+        // to filter based on paintings (as those will typically be the most colourful)
+        case classificationTitle = "classification_title"
+        case classificationTitles = "classification_titles"    }
 }
 
 // MARK: Datum convenience initializers and mutators
@@ -68,7 +73,9 @@ extension Artwork {
         id: Int? = nil,
         imageID: String? = nil,
         title: String? = nil,
-        placeOfOrigin: String? = nil
+        placeOfOrigin: String? = nil,
+        classificationTitle: String? = nil,
+        classificationTitles: [String] = []
     ) -> Artwork {
         return Artwork(
             score: score ?? self.score,
@@ -80,8 +87,9 @@ extension Artwork {
             id: id ?? self.id,
             imageID: imageID ?? self.imageID,
             title: title ?? self.title,
-            placeOfOrigin: placeOfOrigin ?? self.placeOfOrigin
-        )
+            placeOfOrigin: placeOfOrigin ?? self.placeOfOrigin,
+            classificationTitle: classificationTitle ?? self.classificationTitle,
+            classificationTitles: classificationTitles)
     }
 
     func jsonData() throws -> Data {
